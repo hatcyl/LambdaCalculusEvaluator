@@ -10,7 +10,7 @@ public record LeftParentheses : Token;
 public record Letter(char Value) : Token;
 public record Lambda : Token;
 public record Dot : Token;
-public record RightParatheses : Token;
+public record RightParentheses : Token;
 
 public static class Evaluator
 {
@@ -123,7 +123,7 @@ public static class Parser
     {
         Variable variable => [new Letter(variable.Name)],
         Function function => [new Lambda(), .. Unparse(function.Parameter), new Dot(), .. Unparse(function.Body)],
-        Application application => [new LeftParentheses(), .. Unparse(application.Function), .. Unparse(application.Argument), new RightParatheses()],
+        Application application => [new LeftParentheses(), .. Unparse(application.Function), .. Unparse(application.Argument), new RightParentheses()],
         _ => throw new Exception()
     };
 }
@@ -135,7 +135,7 @@ public static class Lexer
         '(' => new LeftParentheses(),
         'λ' => new Lambda(),
         '.' => new Dot(),
-        ')' => new RightParatheses(),
+        ')' => new RightParentheses(),
         _ when char.IsAsciiLetterLower(character) => new Letter(character),
         _ => throw new Exception()
     });
@@ -145,7 +145,7 @@ public static class Lexer
         LeftParentheses => '(',
         Lambda => 'λ',
         Dot => '.',
-        RightParatheses => ')',
+        RightParentheses => ')',
         Letter letter => letter.Value,
         _ => throw new Exception()
     });
