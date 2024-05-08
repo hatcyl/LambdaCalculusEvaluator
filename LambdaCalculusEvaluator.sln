@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaCalculusEvaluator.Library", "LambdaCalculusEvaluator.Library\LambdaCalculusEvaluator.Library.csproj", "{350FB2F0-692A-452F-BFE9-D1286080E693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaCalculusEvaluator.ConsoleApp", "LambdaCalculusEvaluator.ConsoleApp\LambdaCalculusEvaluator.ConsoleApp.csproj", "{E4A74575-5F4E-4312-B759-C193CE54A498}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{350FB2F0-692A-452F-BFE9-D1286080E693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350FB2F0-692A-452F-BFE9-D1286080E693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350FB2F0-692A-452F-BFE9-D1286080E693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350FB2F0-692A-452F-BFE9-D1286080E693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4A74575-5F4E-4312-B759-C193CE54A498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A74575-5F4E-4312-B759-C193CE54A498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A74575-5F4E-4312-B759-C193CE54A498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A74575-5F4E-4312-B759-C193CE54A498}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
